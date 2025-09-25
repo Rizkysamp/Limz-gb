@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LIMZREAL — Link Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#eef1f4;
+      --card:#ffffff;
+      --muted:#6b7aa0;
+      --accent:#163bff;
+      --pill:#f6f8fb;
+      --line:#e0e6ee;
+      --link-text:#18318f;
+      --shadow: 0 6px 18px rgba(16,30,55,0.08);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(#eef2f6, #e9edf1);
+      color:#0b2140;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:28px 16px;
+    }
+
+    .container{
+      width:100%;
+      max-width:420px;
+      background:var(--bg);
+      border-radius:16px;
+      padding:26px 20px 140px;
+      position:relative;
+    }
+
+    .profile{
+      text-align:center;
+      margin-bottom:12px;
+    }
+    .avatar{
+      width:96px;
+      height:96px;
+      border-radius:50%;
+      margin:0 auto 12px;
+      overflow:hidden;
+      border:6px solid rgba(255,255,255,0.7);
+      background:linear-gradient(135deg,#1e2740,#6a2b90);
+      box-shadow:0 6px 20px rgba(20,30,60,0.12);
+    }
+    .avatar img{width:100%; height:100%; object-fit:cover; display:block}
+
+    .title{
+      font-weight:700;
+      color:var(--link-text);
+      font-size:20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+    }
+    .title .lip { font-size:18px; margin-left:4px }
+
+    .subtitle{
+      margin-top:6px;
+      font-size:13px;
+      color:#23407a;
+      text-transform:uppercase;
+      font-weight:600;
+    }
+
+    /* Deskripsi singkat */
+    .desc{
+      margin:12px 10px 6px;
+      font-size:13px;
+      color:#234568;
+      text-align:center;
+      line-height:1.4;
+      background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.3));
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid var(--line);
+      box-shadow: 0 2px 8px rgba(18,34,70,0.03);
+    }
+
+    .links{
+      margin-top:14px;
+      display:grid;
+      gap:12px;
+    }
+
+    .link-item{
+      background:var(--card);
+      border-radius:10px;
+      padding:12px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      border:1px solid var(--line);
+      box-shadow: 0 2px 8px rgba(18,34,70,0.03);
+      text-decoration:none;
+      color:inherit;
+    }
+    .thumb{
+      width:56px;height:44px;border-radius:6px;flex:0 0 56px;overflow:hidden;background:#ddd;
+    }
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .link-text{
+      flex:1;
+      font-weight:700;
+      color:var(--link-text);
+      font-size:15px;
+      line-height:1.15;
+    }
+    .link-sub{
+      display:block;
+      font-size:12px;
+      font-weight:600;
+      color:var(--muted);
+      margin-top:6px;
+    }
+    .three-dots{
+      width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:#9aa6c7;font-size:18px;
+    }
+
+    .credits{
+      margin-top:10px;
+      text-align:center;
+      font-size:12px;
+      color:#4b5f80;
+    }
+
+    .footer-note{
+      position:fixed;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:18px;
+      width:calc(100% - 36px);
+      max-width:420px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .link-push{
+      background:linear-gradient(180deg,#fff,#f7f9fc);
+      border-radius:999px;
+      padding:12px 18px;
+      box-shadow:var(--shadow);
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:600;
+      color:#0b2140;
+      border:1px solid var(--line);
+    }
+    .bubble{
+      background:var(--pill);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:600;
+      color:#17306f;
+      box-shadow: 0 6px 18px rgba(12,36,80,0.06);
+    }
+
+    /* small screens */
+    @media (max-width:420px){
+      .container{padding-bottom:170px}
+      .avatar{width:88px;height:88px}
+      .thumb{width:52px;height:40px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="profile">
+      <div class="avatar">
+        <img src="https://h.top4top.io/p_3555eyebi0.jpg" alt="Foto profil LIMZ">
+      </div>
+      <div class="title">LIMZREAL <span class="lip">💋</span></div>
+      <div class="subtitle">REAL LIMZ 2025</div>
+
+      <!-- Deskripsi yang diminta -->
+      <div class="desc">
+        <strong>Catatan:</strong> Grup isian ini dibuat untuk tujuan <em>push saldo</em> — <u>tidak untuk membagikan link secara umum</u>.  
+        Pembuat / penanggung jawab: <strong>LIMZ</strong>.
+      </div>
+    </header>
+
+    <section class="links" aria-label="Links">
+      <a class="link-item" href="https://chat.whatsapp.com/Iju1DbvobSF8wEqAkts7HX?mode=ems_copy_t" target="_blank" rel="noopener">
+        <div class="thumb"><img src="https://e.top4top.io/p_35553unwr0.png" alt="GB ISIAN"></div>
+        <div style="min-width:0">
+          <span class="link-text">GB ISIAN LIMZZ</span>
+          <span class="link-sub">Klik untuk join — dibuat untuk push saldo, bukan share link</span>
+        </div>
+        <div class="three-dots" aria-hidden="true">⋮</div>
+      </a>
+    </section>
+
+    <div class="credits" aria-hidden="true">
+      Dibuat oleh <strong>LIMZ</strong> • Dilarang menyebarkan link tanpa izin
+    </div>
+  </main>
+
+  <div class="footer-note">
+    <div class="link-push">
+      <div class="bubble">LimzReal/Copyright</div>
+      Bergabung dengan Limz hari ini
+    </div>
+  </div>
+</body>
+</html>
